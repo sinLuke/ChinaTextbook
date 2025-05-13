@@ -56,14 +56,31 @@
 
 ### 解决办法
 要合并这些被拆分的文件，您只需执行以下步骤：
+
+#### Windows
 1. 将合并程序 `mergePDFs.exe` 下载到包含 PDF 文件的文件夹中。
 2. 确保 `mergePDFs.exe` 和被拆分的 PDF 文件在同一目录下。
 3. 双击 `mergePDFs.exe` 程序即可自动完成文件合并。
 
-### 下载方式
-您可以通过以下链接下载 `mergePDFs.exe` 程序：
+#### macOS
+1. 将合并脚本 `mergePDFs.command` 下载到包含 PDF 文件的文件夹中。
+2. 确保 `mergePDFs.command` 和被拆分的 PDF 文件在同一目录下。
+3. 双击 `mergePDFs.command` 脚本即可自动完成文件合并。
+> 4. 如果遇到权限问题，搜索并打开 Terminal.app（终端.app）
+> 5. 输入 `sudo chmod 777 ` 注意最后的空格
+> 6. 将脚本文件 `mergePDFs.command` 拖入 Terminal 窗口，
+> 7. 确认最终的命令看起来像是 `sudo chmod 777 /path/to/mergePDFs.command`，回车
+> 8. 搜索并打开 System Settings.app （系统设置.app）
+> 9. 从左边的边栏里选择“隐私与安全”
+> 10. 划到下面，找到“以阻止使用 mergePDFs.command”，点后面的“仍要打开”按钮
+> 11. 再次尝试双击 `mergePDFs.command` 程序。
 
-[下载 mergePDFs.exe](.cache/mergePDFs.exe)
+### 下载方式
+您可以通过以下链接下载 `mergePDFs` 程序：
+
+[下载 mergePDFs.exe (Windows)](.cache/mergePDFs.exe)
+
+[下载 mergePDFs.command (macOS)](.cache/mergePDFs.command)
 
 [审计源代码](.cache/mergePDFs.go)
 
